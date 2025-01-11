@@ -27,7 +27,7 @@ eureka :
 
 
 
-accounts :
+studentSerivce :
   message : "this the production env for student service"
   contactDetails:
     name : "imad samadi"
