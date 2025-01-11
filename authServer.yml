@@ -1,0 +1,33 @@
+spring :
+  datasource:
+    url : jdbc:postgresql://localhost:5432/JWT2
+    username: postgres
+    password: imad
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
+server:
+  port: 9000
+
+
+
+
+
+authserver :
+  message : "account API"
+  contactDetails:
+    name : "imad samadi"
+    email : "{cipher}90b155f3743514cc4af48e0eb0b54d08156ee37016559ac988d9bafb4f7c5950a7e2fcecccb54510bbc04d9a97779119"
+  onCallSupport :
+    "+212 684738968"
+
+
+

@@ -1,0 +1,29 @@
+spring :
+  datasource:
+    url : jdbc:postgresql://localhost:5432/micro
+    username: postgres
+    password: imad
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  main:
+    banner-mode: off
+
+
+
+accounts :
+  message : "this the production env for account API"
+  contactDetails:
+    name : "imad"
+    email : "{cipher}46d81288da730c98a2476cd8c6603e65f3d74b74f0f3fba84fa7d7e455304330d8208cfd0db9f0080d1e68267af3fa9e"
+  onCallSupport :
+    "PPPPPPPPP"
+
+
