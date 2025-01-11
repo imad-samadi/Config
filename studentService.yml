@@ -19,11 +19,11 @@ spring :
 
 
 accounts :
-  message : "this the production env for account API"
+  message : "this the production env for student service"
   contactDetails:
-    name : "imad"
+    name : "imad samadi"
     email : "{cipher}46d81288da730c98a2476cd8c6603e65f3d74b74f0f3fba84fa7d7e455304330d8208cfd0db9f0080d1e68267af3fa9e"
   onCallSupport :
-    "PPPPPPPPP"
+    "+212 684738968"
 
 
