@@ -1,31 +1,29 @@
-spring:
+spring :
   datasource:
-    url: jdbc:h2:mem:testdb         # Use H2 in-memory database
-    username: sa                    # Default H2 username
-    password:                       # Default H2 password (blank)
-    driver-class-name: org.h2.Driver # H2 driver class
+    url : jdbc:postgresql://localhost:5433/moduleService
+    username: postgres
+    password: imad
+    driver-class-name: org.postgresql.Driver
   jpa:
     hibernate:
-      ddl-auto: update               # Keep this to automatically update the schema
-    show-sql: true                   # Enable to show SQL in the logs
+      ddl-auto: update
+    show-sql: true
     properties:
       hibernate:
-        format_sql: true             # Format the SQL output
-    database-platform: org.hibernate.dialect.H2Dialect  # Use H2 dialect
-
-
-
-# Optional: Enable H2 Console
-spring.h2.console.enabled: true       # Enable H2 web console
-spring.h2.console.path: /h2-console   # Accessible at http://localhost:8080/h2-console
-
-accounts :
-  message : "account API"
-  contactDetails:
-    name : "imad samadi"
-    email : "{cipher}90b155f3743514cc4af48e0eb0b54d08156ee37016559ac988d9bafb4f7c5950a7e2fcecccb54510bbc04d9a97779119"
-  onCallSupport :
-    "LLLLLLLLLLL"
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  main:
+    banner-mode: off
+    
+eureka :
+  instance:
+    prefer-ip-address: true
+  client :
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
 
 
 
