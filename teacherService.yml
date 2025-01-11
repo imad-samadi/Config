@@ -1,4 +1,39 @@
+spring :
+  datasource:
+    url : jdbc:postgresql://localhost:5433/teacherService
+    username: postgres
+    password: imad
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  main:
+    banner-mode: off
+    
+eureka :
+  instance:
+    prefer-ip-address: true
+  client :
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
 
+
+
+studentserivce :
+  message : "this the production env for teacher service"
+  contactDetails:
+    name : "imad samadi"
+    email : "{cipher}46d81288da730c98a2476cd8c6603e65f3d74b74f0f3fba84fa7d7e455304330d8208cfd0db9f0080d1e68267af3fa9e"
+  onCallSupport :
+    "+212 684738968"
 server:
   port: 8081
 
