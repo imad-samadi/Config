@@ -16,6 +16,9 @@ spring :
   main:
     banner-mode: off
     
+server:
+  port: 8082
+  
 eureka :
   instance:
     prefer-ip-address: true
@@ -24,8 +27,7 @@ eureka :
     registerWithEureka: true
     serviceUrl:
       defaultZone: http://localhost:8070/eureka/
-server:
-  port: 8082
+
 
 
 
