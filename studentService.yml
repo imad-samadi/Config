@@ -16,8 +16,7 @@ spring :
   main:
     banner-mode: off
     
-server:
-  port: 8082
+
   
 eureka :
   instance:
