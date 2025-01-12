@@ -1,1 +1,28 @@
-
+spring :
+  datasource:
+    url : jdbc:postgresql://localhost:5433/enrollmentService
+    username: postgres
+    password: imad
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+  main:
+    banner-mode: off
+    
+eureka :
+  instance:
+    prefer-ip-address: true
+  client :
+    fetchRegistry: true
+    registerWithEureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8070/eureka/
+server:
+  port: 8083
