@@ -35,7 +35,7 @@ studentserivce :
   onCallSupport :
     "+212 684738968"
 server:
-  port: 8081
+  port: 9081
 
 
 
